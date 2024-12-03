@@ -55,6 +55,7 @@ body {
   font-family: "Khula", sans-serif;
   color: #151515;
   position: relative;
+  
 }
 
 body::before {
@@ -439,7 +440,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 50px;
 }
 
-.section-title .title {
+.section-title .title { 
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
@@ -466,7 +467,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*Page banner*/
 .page-banner {
-  background-image: url(../images/bg/subscribe-bg-1.jpg);
+  background-image: url("https://img.freepik.com/free-photo/3d-render-graduation-cap-books-diploma_107791-15907.jpg?t=st=1733219688~exp=1733223288~hmac=aa40354f8d0d528639bb63089ab24330d982dd425c57fa58b7caa1bc64a1c016&w=826");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1932,7 +1933,7 @@ blockquote p {
 /* Style the video to cover the full area */
 .banner-video {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
@@ -5592,3 +5593,95 @@ blockquote p {
   border-radius: 20px;
 }
 /* End about us section */
+
+
+/* This is for the course and fee section */
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+}
+.card-custom {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s;
+}
+.card-custom:hover {
+  transform: scale(1.05);
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.card-subtitle {
+  font-size: 1rem;
+  color: #495057;
+}
+.card-text {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #6c757d;
+}
+/* End course and fee section */
+
+
+/* This is also the course and fee section */
+/* This is the img and para section */
+.custom-section {
+  padding: 40px 0;
+}
+.custom-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.text-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+}
+.text-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+/* End course and fee section */
+
+
+/* This is for the admission hero section */
+.application-section {
+  margin-bottom: 30px;
+}
+
+.application-box {
+  /* background-color: #007bff; */
+  border-radius: 50%;
+  /* color: white; */
+  font-size: 1rem;
+}
+
+.application-box ul {
+  padding-left: 20px;
+}
+
+.application-box li {
+  margin: 10px 0;
+}
+
+.direct-admission ol {
+  padding-left: 20px;
+}
+
+.direct-admission li {
+  margin-bottom: 10px;
+}
+
+/* Center content of sections */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* End admission hero section */
