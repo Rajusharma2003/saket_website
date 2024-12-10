@@ -1196,10 +1196,11 @@ blockquote p {
 
 @media only screen and (max-width: 479px) {
   .mobile-menu-toggle {
-    margin-left: 15px;
+    margin-left: 7px;
+    margin-right: -11px;
   }
   .mobile-menu-toggle:first-child {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 }
 
@@ -5686,7 +5687,23 @@ blockquote p {
 }
 /* End admission hero section */
 
-/* This is for the navbar section fix playstore img and menubar */
 
+/* this is the gallery section */
+/* Gallery Section */
+.gallery-section {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
 
-/* End this navber section */
+.gallery-carousel div {
+  padding: 10px; /* Space around each image */
+}
+
+.gallery-carousel img {
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* End gallery section */

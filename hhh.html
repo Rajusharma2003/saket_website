@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<style>
+    /* Gallery Section */
+/* Gallery Section */
+.gallery-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.gallery-carousel div {
+    padding: 10px; /* Space around each image */
+}
+
+.gallery-carousel img {
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+</style>
+<body>
+    
+    <!-- Gallery Section -->
+<div class="gallery-section py-5">
+    <div class="container">
+        <!-- Gallery Heading -->
+        <h1 class="text-center mb-4">Gallery</h1>
+        
+        <!-- Slick Carousel -->
+        <div class="gallery-carousel ">
+            <div>
+                <img class="img-fluid " src="file:///d%3A/web_dev_project/saket_instuite/assets/images/b4.png" alt="Gallery Image 1">
+            </div>
+            <div>
+                <img class="img-fluid" src="file:///d%3A/web_dev_project/saket_instuite/assets/images/b4.png" alt="Gallery Image 2">
+            </div>
+            <div>
+                <img class="img-fluid" src="file:///d%3A/web_dev_project/saket_instuite/assets/images/b4.png" alt="Gallery Image 3">
+            </div>
+            <div>
+                <img class="img-fluid" src="file:///d%3A/web_dev_project/saket_instuite/assets/images/b4.png" alt="Gallery Image 4">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('.gallery-carousel').slick({
+            dots: true, // Adds navigation dots
+            arrows: true, // Enables left and right arrows
+            infinite: true, // Infinite scrolling
+            speed: 500, // Transition speed
+            slidesToShow: 3, // Number of slides to show
+            slidesToScroll: 1, // Number of slides to scroll at a time
+            responsive: [
+                {
+                    breakpoint: 768, // For small screens
+                    settings: {
+                        slidesToShow: 1 // Show 1 slide on small screens
+                    }
+                },
+                {
+                    breakpoint: 1024, // For medium screens
+                    settings: {
+                        slidesToShow: 2 // Show 2 slides on medium screens
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</body>
+</html>
